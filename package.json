@@ -1,0 +1,32 @@
+{
+  "name": "restgen",
+  "version": "1.0.0",
+  "description": "Gerador de API REST CR Sistemas",
+  "main": "./src/bin/app.js",
+  "scripts": {
+    "test": "nodemon ./src/bin/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmgramos36/RESTGen.git"
+  },
+  "keywords": [
+    "CR",
+    "Ssistemas",
+    "RESTGen"
+  ],
+  "author": "Cláudio Ramos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmgramos36/RESTGen/issues"
+  },
+  "homepage": "https://github.com/cmgramos36/RESTGen#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "fastify": "^4.7.0",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.5",
+    "nodemon": "^2.0.20",
+    "require-dir": "^1.2.0"
+  }
+}

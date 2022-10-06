@@ -1,0 +1,9 @@
+{
+    "name": "Animal",
+    "collection": "animais",
+    "schema": {
+        "nome": "String",
+        "especie": "String",
+        "idade": "Number"
+    }
+}

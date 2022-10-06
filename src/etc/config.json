@@ -1,0 +1,7 @@
+{
+    "serverip": "127.0.0.1",
+    "serverport": "3000",
+    "dbip": "127.0.0.1",
+    "dbport": "27017",
+    "dbname": "restGen"
+}

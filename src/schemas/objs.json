@@ -1,0 +1,9 @@
+{
+    "name": "obj",
+    "collection": "objs",
+    "schema": {
+        "nome": "String",
+        "cor": "String",
+        "quant": "Number"
+    }
+}

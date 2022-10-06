@@ -1,0 +1,9 @@
+{
+    "name": "pessoa",
+    "collection": "pessoas",
+    "schema": {
+        "nome": "String",
+        "cpf": "String",
+        "endereco": "String"
+    }
+}

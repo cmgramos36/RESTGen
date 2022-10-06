@@ -1,22 +1,27 @@
-
+/*
+ * RestGen
+ * API REST generator
+ * By: Cláudio Ramos - CR Sistemas de Computação
+ * qui oct 06 15:31
+ */
 const express = require('express');
 const requireDir = require('require-dir');
 const app = express();
-const modelGen = require('./modelGen');
+const modGen = require('./modGen');
 app.db = require("mongoose");
 app.config = require("../etc/config.json");
 require("./db")(app);
 app.schemas = requireDir("../schemas");
 app.models = {};
-app.models.obj = require("../models/obj")(app);
 
 Object.entries(app.schemas).forEach(([key, val]) =>{  
-  app.models[key] = modelGen(app, val);
+  app.models[key] = modGen(app, val);
 });
 
 console.log(app.models);
-require("../controllers/obj")(app);
+require("../controllers/objs")(app);
 require("../controllers/animais")(app);
+require("../controllers/pessoas")(app);
 
 const SERVER = app.listen(app.config.serverport, app.config.serverip, 
   () =>{
